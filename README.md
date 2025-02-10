@@ -1,7 +1,7 @@
-## Gerenciador de Senhas 🔐
+# Gerenciador de Senhas 🔐
 Um programa simples e eficaz para gerenciar suas senhas, desenvolvido em Python com a biblioteca Tkinter. Salve suas senhas localmente e nunca mais se preocupe em esquecê-las! 🚀
 
-# Funcionalidades 🛠️ 
+## Funcionalidades 🛠️ 
 - Gerador de Senhas Seguras: Cria senhas aleatórias com letras maiúsculas, minúsculas, números e símbolos. 🔑
 
 - Armazenamento Local: Salva suas senhas em um arquivo de texto (saved_passwords.txt) na sua máquina. 💾
@@ -10,7 +10,7 @@ Um programa simples e eficaz para gerenciar suas senhas, desenvolvido em Python 
 
 - Copiar Senha: A senha é copiada automaticamente usando pyperclip, basta clicar CTRL + V. 📋
 
-# Futuras Atualizações 🔮
+## Futuras Atualizações 🔮
 
 - Criptografia 🔒: Adicionar criptografia para proteger as senhas salvas no arquivo.
 
