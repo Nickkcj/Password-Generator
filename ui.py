@@ -1,8 +1,11 @@
 from tkinter import *
+from tkinter import messagebox
 from password_generator import generate_password
+from data_search import search
 from file_manager import save_password
 import pyperclip
 import os
+
 
 def setup_ui(window):
     # Construct the path to logo.png
@@ -52,10 +55,27 @@ def setup_ui(window):
         website = website_entry.get()
         email = email_entry.get()
         password = password_entry.get()
+        new_data = {website: {
+            "email": email,
+            "password": password,
+        }}
 
-        if save_password(website, email, password):
+        if save_password(new_data, website):
             website_entry.delete(0, END)
             password_entry.delete(0, END)
+
+    def popup_data_from_search():
+        try:
+            website = website_entry.get()
+            email, password = search(website)
+            messagebox.showinfo(title="Data", message=f"Email: {email}\nPassword: {password}")
+
+        except Exception:
+            messagebox.showwarning(title="Error", message="This data doesn't exist!")
+
+        
+
+
 
     # Creating the buttons
     generate_password_button = Button(text="Generate Password", command=generate_and_insert_password)
@@ -63,6 +83,9 @@ def setup_ui(window):
 
     add_button = Button(text="Add", width=35, command=save_data)
     add_button.grid(column=1, row=4, columnspan=2, sticky="EW")
+
+    search_button = Button(text="Search", command=popup_data_from_search)
+    search_button.grid(column=2, row=1, sticky="EW")
 
     # Configure column weights
     window.grid_columnconfigure(1, weight=1)
