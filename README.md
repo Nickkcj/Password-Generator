@@ -1,21 +1,22 @@
-# Gerenciador de Senhas 🔐
-Um programa simples e eficaz para gerenciar suas senhas, desenvolvido em Python com a biblioteca Tkinter. Salve suas senhas localmente e nunca mais se preocupe em esquecê-las! 🚀
+# Password Manager 🔐  
+A simple and effective program for managing your passwords, developed in Python using the Tkinter library. Save your passwords locally and never worry about forgetting them again! 🚀  
 
-## Funcionalidades 🛠️ 
-- Gerador de Senhas Seguras: Cria senhas aleatórias com letras maiúsculas, minúsculas, números e símbolos. 🔑
+---
 
-- Armazenamento Local: Salva suas senhas em um arquivo de texto (saved_passwords.txt) na sua máquina. 💾
+## Features 🛠️  
 
-- Interface Simples e Intuitiva: Fácil de usar, com uma interface gráfica amigável. 🖥️
+- **Secure Password Generator**: Creates random passwords with uppercase and lowercase letters, numbers, and symbols. 🔑  
+- **Local Storage**: Saves your passwords in a text file (`saved_passwords.txt`) on your machine. 💾  
+- **Simple and Intuitive Interface**: Easy to use with a user-friendly graphical interface. 🖥️  
+- **Copy Password**: Automatically copies the password using `pyperclip`. Just press `CTRL + V`. 📋
 
-- Copiar Senha: A senha é copiada automaticamente usando pyperclip, basta clicar CTRL + V. 📋
+---
 
-## Futuras Atualizações 🔮
+## Future Updates 🔮  
 
-- Criptografia 🔒: Adicionar criptografia para proteger as senhas salvas no arquivo.
+- **Encryption** 🔒: Add encryption to protect saved passwords.  
+- **Password Search** 🔍: Implement a search function to quickly find saved passwords.  
+- **Automatic Backup** 📁: Create automatic backups of the password file.  
+- **Cloud Integration** 🌐: Optionally save passwords securely in the cloud.
 
-- Busca de Senhas 🔍: Implementar uma função de busca para encontrar senhas salvas rapidamente.
-
-- Backup Automático 📁: Criar backups automáticos do arquivo de senhas.
-
-- Integração com Nuvem 🌐: Salvar senhas de forma segura na nuvem (opcional).
+---
